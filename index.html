@@ -69,21 +69,39 @@
             <img src="image2.jpg" alt="Image 2">
             <img src="image3.jpg" alt="Image 3">
         </div>
+
+         <div class="image-container">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
         <!-- Reading section -->
-        <div id="reading">
+        <div id="reading" class="fade-in">
             <h2>Reading</h2>
             <p>Content related to your reading interests goes here.</p>
         </div>
         <!-- TV / Movies section -->
-        <div id="tv-movies">
+        <div id="tv-movies" class="fade-in">
             <h2>TV / Movies</h2>
             <p>Content related to your TV and movie interests goes here.</p>
         </div>
         <!-- Apologetics section -->
-        <div id="apologetics">
+        <div id="apologetics" class="fade-in">
             <h2>Apologetics</h2>
             <p>Content related to apologetics goes here.</p>
         </div>
     </div>
+
+    <!-- JavaScript for fade-in animation -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const fadeInElements = document.querySelectorAll('.fade-in');
+            for (let element of fadeInElements) {
+                if (window.scrollY + window.innerHeight > element.offsetTop + element.offsetHeight / 2) {
+                    element.classList.add('active');
+                }
+            }
+        });
+    </script>
 </body>
 </html>
