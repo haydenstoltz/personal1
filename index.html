@@ -41,14 +41,6 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
-        /* Animation styles */
-        .fade-in {
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-        .fade-in.active {
-            opacity: 1;
-        }
         /* Text color */
         p {
             color: #4a4a4a; /* Dark gray text color */
@@ -57,20 +49,20 @@
 </head>
 <body>
     <nav>
-        <!-- Links to new pages -->
-        <a href="#">About Me</a>
-        <a href="#">Reading</a>
-        <a href="#">TV / Movies</a>
-        <a href="#">Apologetics</a>
+        <!-- Links removed -->
+        <span>About Me</span>
+        <span>Reading</span>
+        <span>TV / Movies</span>
+        <span>Apologetics</span>
     </nav>
     <div class="container">
         <h1>Welcome to Your Name's Personal Website</h1>
-        <p>This is a simple, clean webpage designed to showcase my interests.</p>
         <!-- About Me section -->
-        <section id="about" class="fade-in">
+        <section id="about">
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nibh ullamcorper, varius velit et, suscipit nulla. Maecenas nec risus venenatis, rutrum nisl et, ullamcorper velit. Quisque congue sapien nec odio accumsan, ut elementum lacus placerat. Sed ullamcorper felis sit amet mi accumsan, id vestibulum quam facilisis. Curabitur id lacus nec felis pretium malesuada. Integer condimentum, velit vel fringilla mattis, ipsum orci mattis magna, eget mattis ex eros eget sapien. Vestibulum quis tellus at mi rhoncus ultrices. Phasellus congue sem et purus molestie faucibus.</p>
         </section>
+        <p>This is a simple, clean webpage designed to showcase my interests.</p>
         <!-- Three images in a row -->
         <div class="image-container">
             <img src="image1.jpg" alt="Image 1">
@@ -78,32 +70,20 @@
             <img src="image3.jpg" alt="Image 3">
         </div>
         <!-- Reading section -->
-        <div id="reading" class="fade-in">
+        <div id="reading">
             <h2>Reading</h2>
             <p>Content related to your reading interests goes here.</p>
         </div>
         <!-- TV / Movies section -->
-        <div id="tv-movies" class="fade-in">
+        <div id="tv-movies">
             <h2>TV / Movies</h2>
             <p>Content related to your TV and movie interests goes here.</p>
         </div>
         <!-- Apologetics section -->
-        <div id="apologetics" class="fade-in">
+        <div id="apologetics">
             <h2>Apologetics</h2>
             <p>Content related to apologetics goes here.</p>
         </div>
     </div>
-
-    <!-- JavaScript for fade-in animation -->
-    <script>
-        window.addEventListener('scroll', function() {
-            const fadeInElements = document.querySelectorAll('.fade-in');
-            for (let element of fadeInElements) {
-                if (window.scrollY + window.innerHeight > element.offsetTop + element.offsetHeight / 2) {
-                    element.classList.add('active');
-                }
-            }
-        });
-    </script>
 </body>
 </html>
