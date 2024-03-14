@@ -49,29 +49,44 @@
         .fade-in.active {
             opacity: 1;
         }
+        /* Text color */
+        p {
+            color: #4a4a4a; /* Dark gray text color */
+        }
     </style>
 </head>
 <body>
     <nav>
-        <a href="#reading">Reading</a>
-        <a href="#tv-movies">TV / Movies</a>
-        <a href="#apologetics">Apologetics</a>
+        <!-- Links to new pages -->
+        <a href="about.html">About Me</a>
+        <a href="reading.html">Reading</a>
+        <a href="tv-movies.html">TV / Movies</a>
+        <a href="apologetics.html">Apologetics</a>
     </nav>
     <div class="container">
         <h1>Welcome to Your Name's Personal Website</h1>
-        <p>This is a simple, clean webpage designed to showcase my interests.</p>
+        <!-- About Me section -->
         <section id="about" class="fade-in">
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget nibh ullamcorper, varius velit et, suscipit nulla. Maecenas nec risus venenatis, rutrum nisl et, ullamcorper velit. Quisque congue sapien nec odio accumsan, ut elementum lacus placerat. Sed ullamcorper felis sit amet mi accumsan, id vestibulum quam facilisis. Curabitur id lacus nec felis pretium malesuada. Integer condimentum, velit vel fringilla mattis, ipsum orci mattis magna, eget mattis ex eros eget sapien. Vestibulum quis tellus at mi rhoncus ultrices. Phasellus congue sem et purus molestie faucibus.</p>
         </section>
+        <!-- Three images in a row -->
+        <div class="image-container">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+        <!-- Reading section -->
         <div id="reading" class="fade-in">
             <h2>Reading</h2>
             <p>Content related to your reading interests goes here.</p>
         </div>
+        <!-- TV / Movies section -->
         <div id="tv-movies" class="fade-in">
             <h2>TV / Movies</h2>
             <p>Content related to your TV and movie interests goes here.</p>
         </div>
+        <!-- Apologetics section -->
         <div id="apologetics" class="fade-in">
             <h2>Apologetics</h2>
             <p>Content related to apologetics goes here.</p>
